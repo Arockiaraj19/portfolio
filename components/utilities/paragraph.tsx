@@ -14,8 +14,7 @@ const Paragraph = ({ content, style }: { content: string, style: string }) => {
   const arrayOfContent=content.split(" ");
 
  const words=  arrayOfContent.map((value)=>`${value} `);
-   console.log("array of conteant la enna varuthu");
-   console.log(words);
+
    const item = {
     hidden: {
       y: "200%",

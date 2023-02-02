@@ -22,3 +22,99 @@ body {
 * {
   box-sizing: border-box;
 }
+
+#globalLoader {
+  position:fixed;
+ top: 0;
+ right: 0;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:transparent;
+  overflow: hidden;
+   width: 100%;
+   height:100vh;
+
+}
+#para{
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  opacity:0.5; */
+  scale:1.5;
+  color: white;
+  transition: all;
+  animation: text 2s linear 0s;
+  animation-fill-mode: forwards;
+  /* z-index: 1; */
+
+}
+#line{ 
+  margin-top:5px ;
+  opacity: 0;
+  width: 5vw;
+  height: 2px;
+  border-radius: 20px;
+  background-color: white;
+  transition: all;
+  animation: line 2s linear 2s;
+  animation-fill-mode: forwards;
+}
+
+#globalLoader::before{
+ content: '';
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  height:50vh;
+  width:100vw;
+  background-color: black;
+  z-index: -1;
+  transition: all ;
+  animation: first 2s linear 4s;
+  animation-fill-mode: forwards;
+}
+#globalLoader::after{
+  content: '';
+   position: absolute;
+ bottom:0vh;
+   left: 0;
+   height:50vh;
+   width:100vw;
+   background-color: black;
+   z-index: -1;
+   transition: all;
+   animation: last 2s linear 4s;
+   animation-fill-mode: forwards;
+ }
+#main{
+  display: none;
+}
+ @keyframes text {
+0% {scale:1.5;opacity:0.5}
+
+  50% {scale:1.25;opacity:1}
+
+  100% {scale:1;opacity:1}
+}
+@keyframes line {
+  0% {opacity:1}
+  
+  
+  
+    100% {width: 100vw;opacity:1}
+  }
+@keyframes first {
+
+ 
+  100% {top: -60vh;}
+}
+@keyframes last {
+ 
+ 
+  100% {bottom: -60vh;}
+}

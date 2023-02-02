@@ -3,24 +3,34 @@ import type { AppProps } from 'next/app'
 import { useEffect,useState } from 'react';
 import {useRouter} from 'next/router'
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setIsLoading] = useState(false);
-  const router = useRouter();
+
   useEffect(() => {
-   router.events.on("routeChangeStart", (url)=>{
-      alert('hi');
-      setIsLoading(true)
+    if (typeof window !== 'undefined') {
+     
+      const main = document.getElementById('main');
+      const line = document.getElementById('line');
+      const para = document.getElementById('para');
+     line?.addEventListener("animationend", function() {
+      console.log('inga varutha');
+      main!.style.display="block";
+      line?.remove();
+      para?.remove();
     });
-
-    // Router.events.on("routeChangeComplete", (url)=>{
-    //   setIsLoading(false)
+    // loader?.addEventListener("animationend", function() {
+    //   loader.remove();
     // });
+    
+    const myTimeout = setTimeout(()=>{
+      const loader = document.getElementById('globalLoader');
+      loader?.remove();
+      clearTimeout(myTimeout);
+    }, 8000);
 
-    // Router.events.on("routeChangeError", (url) =>{
-    //   setIsLoading(false)
-    // });
-
-  }, [router.events])
+    }
+  }, [])
 
   return   <>
   {loading? <div>Loading..</div>:
