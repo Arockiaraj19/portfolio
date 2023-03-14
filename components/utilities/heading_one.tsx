@@ -32,7 +32,7 @@ const HeadingOne = ({ content, style }: { content: string, style: string }) => {
     <motion.div whileInView={replay ? "visible" : "hidden"}  initial="hidden" variants={container}>
 
 
-      <motion.h1 className={`text-4xl font-bold text-black ${style}`}   >{words.map((value,index)=><span
+      <motion.h1 className={`text-5xl font-bold ${style} text-black `}   >{words.map((value,index)=><span
                   style={{
                     overflow: "hidden",
                     display: "inline-block"
@@ -52,3 +52,6 @@ const HeadingOne = ({ content, style }: { content: string, style: string }) => {
 }
 
 export default HeadingOne
+
+
+

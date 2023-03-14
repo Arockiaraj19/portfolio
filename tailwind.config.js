@@ -37,9 +37,21 @@ module.exports = {
       animation: {
     after: 'after 2s cubic-bezier(.77,0,.18,1) forwards',
     before: 'before 2s cubic-bezier(.77,0,.18,1) forwards',
+    swipe: 'swipe 5000 linear infinite backwards',
       },
       keyframes: {
-       
+       swipe:{
+      
+          '0%': {
+            transform: 'translate(0)'
+          },
+        
+          '100%': {
+            transform: 'translate(-100%)'
+          }
+      
+        
+       },
       after: {
         '0%': { transform: 'translateX(-100%)' },
         '100%': { transform: 'translateX(101%)' },

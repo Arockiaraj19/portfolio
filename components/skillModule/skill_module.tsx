@@ -1,12 +1,13 @@
 import { useEffect } from "react";
-import SkillsHeading from "./utilities/heading_component";
 import SkillsContainer from "./utilities/skills_container";
+import HeadingModule from '../utilities/heading_module'
 
 
 function Skills() {
     
-    return <div>
-       <SkillsHeading />
+    return <div id="skills">
+        <HeadingModule contentHeading={"These are selection of my recent works"} mainHeading={"Skills."}/>
+      
        <SkillsContainer/>
     </div>;
 }

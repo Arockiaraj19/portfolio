@@ -6,7 +6,7 @@ export default function Document() {
       <Head />
       <body>
       <div id="globalLoader">
-<p  id='para'>Punitha Arockiaraj</p>
+<p  id='para'>Mukila M</p>
 <div id='line'></div>
 </div>
      <div id='main'>
