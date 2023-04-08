@@ -9,8 +9,8 @@ export default function  ContentHomeComponent() {
     <main className="flex-1 flex-col justify-end">
 
 
-     <HeadingOne content='Creative Developer' style='mb-3'/>
-      <Paragraph style="mb-8" content='Introduce yourself. Tell readers who you are in the first line of your portfolio introduction'/>
+     <HeadingOne content='Hi,I am Arockia... Professional Developer' style='mb-3'/>
+      <Paragraph style="mb-8" content="I'm a software developer with 4 years of experience in the field. I have a passion for creating high-quality software that solves complex problems and provides a seamless user experience."/>
 
      <div className='flex'>
      <Button  text='SEE MY PROJECT' onTap={(e:any)=>{}}/>

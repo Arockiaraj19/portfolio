@@ -58,22 +58,12 @@ export default function ImageHomeComponent
     <div className="flex-1 bg-top relative overflow-hidden h-96">
  
  <div className='w-full h-full'>
-      <Fade
-      canSwipe={false}
-      arrows={false}
-      duration={2000}
-      autoplay={true}
-
-       >
-        {fadeImages.map((fadeImage, index) => (
-          <div key={index} className='w-full h-96 flex items-center justify-center bg-cover '>
-            <Image  src={fadeImage.url} alt='index'  layout='fill' 
+ <div  className='w-full h-96 flex items-center justify-center bg-cover '>
+            <Image  src={ image1.src} alt='index'  layout='fill' 
    objectFit='fill'/>
           
           </div>
-        ))}
-      </Fade>
     </div>
     </div>
-  )
+)
 }

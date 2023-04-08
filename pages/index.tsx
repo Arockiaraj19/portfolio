@@ -8,15 +8,18 @@ import About from '../components/aboutModule/about_module'
 import Footer from '../components/footer/footer_module'
 import Cursor from '../components/utilities/cursor'
 import Certificate from '../components/certificateModule/certificate_module'
+import ServiceModule from '../components/service/service_module'
 
 const Page = () => {
   return (
  <div >
  {/* <Cursor/> */}
 <Home/>
+<ServiceModule/>
 <ProjectModule/>
+
 <Skills/>
-<Certificate/>
+{/* <Certificate/> */}
 <About/>
 <Footer/>
 
