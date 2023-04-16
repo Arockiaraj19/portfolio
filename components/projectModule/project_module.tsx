@@ -1,6 +1,9 @@
 
 
 import HeadingModule from "../utilities/heading_module"
+import ProjectCardThree from "./utilities/project_cardFour"
+import ProjectCardOne from "./utilities/project_cardOne"
+import ProjectCardTwo from "./utilities/project_cardTwo"
 import ProjectCard from "./utilities/project_component"
 
 function ProjectModule() {
@@ -9,8 +12,9 @@ function ProjectModule() {
    <HeadingModule contentHeading={"These are selection of my recent works"} mainHeading={"Project"}/>
 
 <ProjectCard/>
-<ProjectCard/>
-<ProjectCard/>
+<ProjectCardOne/>
+<ProjectCardTwo/>
+<ProjectCardThree/>
   </div>
   )
 }

@@ -9,7 +9,7 @@ import HeadingTwo from "../utilities/heading_two";
 const Footer = () => {
     return (  <div className="bg-black w-full h-auto pt-14 flex  flex-col   items-center">
   
-  <HeadingTwo content="Let us Together" style="text-4xl font-semibold text-center text-white"/>     
+  <HeadingTwo content="Let us work Together" style="text-4xl font-semibold text-center text-white"/>     
  
    
     <Paragraph style="mb-12 text-white" content='These are selection of my recent works'/>    
