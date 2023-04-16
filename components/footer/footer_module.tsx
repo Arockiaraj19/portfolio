@@ -1,24 +1,21 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "../utilities/button";
+import HeadingOne from "../utilities/heading_one";
+import Paragraph from "../utilities/paragraph";
+import HeadingTwo from "../utilities/heading_two";
 
  
 const Footer = () => {
     return (  <div className="bg-black w-full h-auto pt-14 flex  flex-col   items-center">
   
+  <HeadingTwo content="Let us work Together" style="text-4xl font-semibold text-center text-white"/>     
+ 
    
-    <h1 className=" text-4xl font-semibold text-white text-center">Let us Together</h1><div className="ml-3 h-[2px] w-10 bg-secondary"></div>
-   
-          <p className="text-xs mt-4 mb-12 text-white text-center">These are selection of my recent works</p>
-          <div  className="flex mb-24">
-         <div className="h-14 w-14 my-auto  bg-secondary  rounded-full"></div>
-       <div className='-ml-12 pl-6 flex items-center'>
-       <div className="text-sm font-semibold mr-4 uppercase text-white">VIEW PROJECT</div>
-       <FontAwesomeIcon icon={faArrowRight} className="text-white" />
-       </div>
-        
-         </div> 
+    <Paragraph style="mb-12 text-white" content='These are selection of my recent works'/>    
+          <Button  text='SEE MY PROJECT' onTap={(e:any)=>{}}/>
 
-         <ul className="mb-6 flex space-x-4 child:text-xs child:font-normal child:cursor-pointer child:text-white">
+         <ul className="my-6 flex space-x-4 child:text-xs child:font-normal child:cursor-pointer child:text-white">
     <li className="underline" >Github</li>
   <li>/</li>
     <li className="underline" >LinkedIn</li>

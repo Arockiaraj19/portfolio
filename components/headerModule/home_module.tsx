@@ -4,11 +4,15 @@ import { LinkHomeComponent } from "./utilities/link_home_component";
 
 const Header=()=>{
 return (
-    <div className='w-full py-8 px-10 bg-primary'>
-        <HeaderComponent/>
-        <HomeComponent/>
-        <LinkHomeComponent/>
+    <div>
+          <HeaderComponent/>
+          <div className='w-full py-14 px-10 bg-primary' id="home">
+      
+      <HomeComponent/>
+      <LinkHomeComponent/>
+  </div>
     </div>
+   
 );
 }
 

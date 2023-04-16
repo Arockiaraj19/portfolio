@@ -15,16 +15,25 @@ module.exports = {
       'white': '#FFFFFF',
       'black':'#141414',
       'grey':'#dfdfdf',
-      'dark_grey':'#909090'
+      'dark_grey':'#909090',
+      'blue':"#038ede"
       
      
     },
     screens: {
-      'tablet': '640px',
-      'laptop': '1024px',
-      'desktop': '1280px',
+      '2xl': {'max': '1535px'},
+   
+
+      'xl': {'max': '1279px'},
     
+
+      'lg': {'max': '1023px'},
+    
+
+      'md': {'max': '767px'},
+       'sm': {'max': '639px'},
     },
+ 
     backgroundImage: {
       'background-pattern': "url('~/assets/bg.png')",
       'top-logo': "url('~/assets/logo1.svg')",
@@ -37,9 +46,21 @@ module.exports = {
       animation: {
     after: 'after 2s cubic-bezier(.77,0,.18,1) forwards',
     before: 'before 2s cubic-bezier(.77,0,.18,1) forwards',
+    swipe: 'swipe 5000 linear infinite backwards',
       },
       keyframes: {
-       
+       swipe:{
+      
+          '0%': {
+            transform: 'translate(0)'
+          },
+        
+          '100%': {
+            transform: 'translate(-100%)'
+          }
+      
+        
+       },
       after: {
         '0%': { transform: 'translateX(-100%)' },
         '100%': { transform: 'translateX(101%)' },
