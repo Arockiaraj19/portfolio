@@ -18,8 +18,9 @@ const SkillsContainer = () => {
    
     // }, [isInView])
     
-    return (<div ref={ref} className="w-full  grid grid-cols-4">
-        <section className={`bg-black h-80 flex flex-col justify-center items-center transition-all delay-4000 duration-2000 col-start-2 rounded-3xl border-white`}>
+    return (<div ref={ref} className="w-full   grid grid-cols-4 sm:gap-10 sm:grid-cols-1">
+
+        <section className={`bg-black h-80 sm:w-full  flex flex-col justify-center items-center transition-all delay-4000 duration-2000 col-start-2 sm:col-start-1 rounded-3xl border-white`}>
         <FontAwesomeIcon icon={faMobile} className='text-white h-20 w-20 mb-10' />
          <div className="text-3xl font-bold text-white">
         Flutter
@@ -30,7 +31,9 @@ const SkillsContainer = () => {
        React Native
         </div>
         </section>
-        <section className={`bg-black h-80 col-start-4 flex flex-col justify-center items-center  rounded-3xl transition-all delay-4000 duration-2000`}>
+
+
+        <section className={`bg-black h-80 sm:w-full col-start-4 sm:col-start-1  flex flex-col justify-center items-center  rounded-3xl transition-all delay-4000 duration-2000`}>
         <FontAwesomeIcon icon={faComputer} className='text-white h-20 w-20 mb-10' />
         <div className="text-3xl font-bold text-white">
        React Js
@@ -41,7 +44,9 @@ const SkillsContainer = () => {
       Next Js
         </div>
         </section>
-        <section className={`bg-black h-80 flex flex-col justify-center items-center  rounded-3xl transition-all delay-4000 duration-2000`}>
+
+
+        <section className={`bg-black h-80 sm:col-start-1 sm:w-full  flex flex-col justify-center items-center  rounded-3xl transition-all delay-4000 duration-2000`}>
         <FontAwesomeIcon icon={faServer} className='text-white h-20 w-20 mb-10' />
         <div className="text-3xl font-bold text-white text-center">
      Node Js
@@ -51,7 +56,9 @@ const SkillsContainer = () => {
     DevOps
         </div>
         </section>
-        <section className={`bg-black h-80 col-start-3 col-end-4 flex flex-col justify-center items-center  rounded-3xl transition-all delay-4000 duration-2000`}>
+
+
+        <section className={`bg-black h-80 sm:col-start-1 sm:w-full  col-start-3 col-end-4 flex flex-col justify-center items-center  rounded-3xl transition-all delay-4000 duration-2000`}>
         <FontAwesomeIcon icon={faCloud} className='text-white h-20 w-20 mb-10' />
         <div className="text-3xl font-bold text-white">
        AWS
@@ -62,7 +69,9 @@ const SkillsContainer = () => {
      Firebase
         </div>
         </section>
-        <section className={`bg-black h-80 col-start-2 flex flex-col justify-center items-center  rounded-3xl transition-all delay-4000 duration-2000`}>  <FontAwesomeIcon icon={faDatabase} className='text-white h-20 w-20 mb-4' />
+
+
+        <section className={`bg-black h-80 sm:col-start-1 sm:w-full  col-start-2 flex flex-col justify-center items-center  rounded-3xl transition-all delay-4000 duration-2000`}>  <FontAwesomeIcon icon={faDatabase} className='text-white h-20 w-20 mb-4' />
         <div className="text-3xl font-bold text-white">
     Databases
         </div>

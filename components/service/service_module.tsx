@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import HeadingOne from "../utilities/heading_one";
 import { IconDefinition, faComputer,faMobilePhone ,faServer} from "@fortawesome/free-solid-svg-icons";
 const ServiceModule=()=>{
-return <div className="flex m-28 gap-10">
+return <div className="flex m-28 sm:m-10 gap-10 sm:flex-col">
 <section  className="flex-1 flex flex-col justify-center">
 <HeadingOne content={"What service do I provide"} style="mb-4"/>
 

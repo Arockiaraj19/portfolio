@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ServiceCard=({heading,content,icon}:{heading:string,content:string,icon:IconDefinition})=>{
 return <motion.div
 
-className="flex p-7 mb-4 shadow items-center rounded-sm gap-10">
+className="flex p-7 mb-4 sm:mb-10 shadow items-center rounded-sm gap-10">
 <section >
 <FontAwesomeIcon icon={icon} className='text-black h-10 w-10' />
 </section>

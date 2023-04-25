@@ -6,7 +6,7 @@ const Header=()=>{
 return (
     <div>
           <HeaderComponent/>
-          <div className='w-full py-14 px-10 bg-primary' id="home">
+          <div className='w-full py-14 px-10 sm:px-0 bg-primary sm:overflow-hidden' id="home">
       
       <HomeComponent/>
       <LinkHomeComponent/>

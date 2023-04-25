@@ -9,7 +9,7 @@ import ProjectCard from "./utilities/project_component"
 function ProjectModule() {
   return (
   <div id="project">
-   <HeadingModule contentHeading={"These are selection of my recent works"} mainHeading={"Project"}/>
+   <HeadingModule contentHeading={"These are selection of my recent works"} mainHeading={"Take a look at the latest projects I've done"}/>
 
 <ProjectCard/>
 <ProjectCardOne/>
