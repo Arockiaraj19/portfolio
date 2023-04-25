@@ -1,7 +1,11 @@
 import { motion } from "framer-motion"
-import { useState } from "react";
+import React, { useState } from "react";
+ 
+  import { ContextData,actions } from "../../pages";
+
 
 const HeadingOne = ({ content, style }: { content: string, style: string }) => {
+  const {setValue,value} = React.useContext(ContextData);
   const [replay, setReplay] = useState(true);
   const container = {
     visible: {
@@ -29,7 +33,12 @@ const HeadingOne = ({ content, style }: { content: string, style: string }) => {
   };
   return (
 
-    <motion.div whileInView={replay ? "visible" : "hidden"}  initial="hidden" variants={container}>
+    <motion.div whileInView={replay ? "visible" : "hidden"}  initial="hidden" variants={container} onHoverStart={(e)=>{
+      console.log(e);
+      console.log(setValue);
+      console.log(value)
+      return setValue({type:actions.HOVER_START})
+    }} onHoverEnd={(e)=>setValue({type:actions.HOVER_END})}>
 
 
       <motion.h1 className={`text-5xl font-bold ${style} text-black `}   >{words.map((value,index)=><span

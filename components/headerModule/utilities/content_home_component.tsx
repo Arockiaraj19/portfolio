@@ -4,9 +4,10 @@
 import HeadingOne from '../../utilities/heading_one'
 import Paragraph from '../../utilities/paragraph'
 import Button from '../../utilities/button'
+
 export default function  ContentHomeComponent() {
   return (
-    <main className="flex-1 flex-col justify-end">
+    <main className="flex-1  sm:w-full flex-col justify-end">
 
 
      <HeadingOne content='Hi,I am Arockia... Professional Developer' style='mb-3'/>
