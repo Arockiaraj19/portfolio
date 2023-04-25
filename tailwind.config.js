@@ -47,22 +47,23 @@ module.exports = {
     after: 'after 2s cubic-bezier(.77,0,.18,1) forwards',
     before: 'before 2s cubic-bezier(.77,0,.18,1) forwards',
     swipe: 'swipe 5000 linear infinite backwards',
-    scroll:'scroll 5000 linear infinite'
+    scroll:'scroll 10s linear infinite',
+    scrollone:'scrollone 10s linear infinite'
       },
       keyframes: {
 scroll:{
-  '0%': {
-    transform: 'translateX(-10%)'
-  },
-  '10%': {
-    transform: 'translateX(10%)'
-  },
-  '20%': {
-    transform: 'translateX(20%)'
-  },
-  '100%': {
-    transform: 'translateX(120%)'
+  
+  'to': {
+    transform: 'translateX(-100%)'
   }
+
+},
+scrollone:{
+  
+  'to': {
+    transform: 'translateX(100%)'
+  }
+  
 },
 
        swipe:{
