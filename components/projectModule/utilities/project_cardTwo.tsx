@@ -11,8 +11,11 @@ import webThree from '../../../assets/projects/web-3.png'
 import webFour from '../../../assets/projects/web4.png'
 import { actions,ContextData } from '../../../pages';
 import React from 'react';
+import { konotoni } from '../../../constants/web_links';
+import { useRouter } from 'next/router';
 
 const ProjectCardTwo=()=>{
+  const router=useRouter();
   const {setValue,value} = React.useContext(ContextData);
   return <div className='flex sm:flex-col w-full h-72 my-20 px-20 gap-10 sm:h-96 sm:px-10 sm:gap-0'
   
@@ -41,7 +44,9 @@ const ProjectCardTwo=()=>{
     <li className="underline" >Javascript</li>
     
 </ul> 
-<div  className='flex'>
+<div  className='flex' onClick={(e)=>{
+  router.push( konotoni);
+}}>
   <p className='text-sm mr-3'>See Detail Project</p>
   <FontAwesomeIcon icon={faArrowRight} className='text-black h-5 w-5' />
 </div>

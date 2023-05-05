@@ -8,8 +8,12 @@ import Modal from 'react-modal'
 import projectOne from '../../../assets/projects/resume.png'
 import { actions,ContextData } from '../../../pages';
 import React from 'react';
+import { useRouter } from 'next/router';
+import { maduraResume } from '../../../constants/web_links';
 
 const ProjectCardOne=()=>{
+  
+  const router=useRouter();
   const {setValue,value} = React.useContext(ContextData);
   return <div className='flex sm:flex-col w-full h-72 my-20 px-20 gap-10  sm:h-96 sm:px-10 sm:gap-0 '
   
@@ -28,7 +32,9 @@ const ProjectCardOne=()=>{
    
     
 </ul> 
-<div  className='flex'>
+<div  className='flex' onClick={(e)=>{
+  router.push( maduraResume);
+}}>
   <p className='text-sm mr-3'>See Detail Project</p>
   <FontAwesomeIcon icon={faArrowRight} className='text-black h-5 w-5' />
 </div>

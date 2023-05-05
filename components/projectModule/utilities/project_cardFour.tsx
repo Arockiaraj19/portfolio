@@ -29,8 +29,8 @@ const ProjectCardThree=()=>{
     
 </ul> 
 <div  className='flex'>
-  <p className='text-sm mr-3'>See Detail Project</p>
-  <FontAwesomeIcon icon={faArrowRight} className='text-black h-5 w-5' />
+  {/* <p className='text-sm mr-3'>See Detail Project</p>
+  <FontAwesomeIcon icon={faArrowRight} className='text-black h-5 w-5' /> */}
 </div>
 </section>
 <section  className='h-full flex-1 bg-black relative flex justify-center items-center'>

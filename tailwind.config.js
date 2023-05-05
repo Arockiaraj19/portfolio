@@ -47,8 +47,8 @@ module.exports = {
     after: 'after 2s cubic-bezier(.77,0,.18,1) forwards',
     before: 'before 2s cubic-bezier(.77,0,.18,1) forwards',
     swipe: 'swipe 5000 linear infinite backwards',
-    scroll:'scroll 10s linear infinite',
-    scrollone:'scrollone 10s linear infinite'
+    scroll:'scroll 20s linear infinite',
+    scrollone:'scrollone 20s linear infinite'
       },
       keyframes: {
 scroll:{
