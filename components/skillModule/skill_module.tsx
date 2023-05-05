@@ -24,12 +24,12 @@ import HeadingOne from "../utilities/heading_one";
 function Skills() {
     const {setValue,value} = React.useContext(ContextData);
     return <div id="skills">
-        <HeadingModule contentHeading={"These are selection of my recent works"} mainHeading={"My Extensive List of Skills"}/>
+        <HeadingModule contentHeading={""} mainHeading={"My Extensive List of Skills"}/>
       
       
 
        <div className="relative w-full overflow-hidden bg-black py-20 ">
-<div className="h-auto w-auto flex translate-x-full animate-scroll space-x-10 items-center mb-5">
+<div className="h-auto w-[1400px] flex translate-x-full animate-scroll space-x-10 items-center mb-5">
 <SkillsCard imageSrc={html.src}/>
 <SkillsCard imageSrc={css.src}/>
 <SkillsCard imageSrc={javascript.src}/>
@@ -39,7 +39,7 @@ function Skills() {
         onMouseLeave={() =>setValue({type:actions.HOVER_END})}>Web Tech</h2>
 </div>
  
-       <div className="h-auto w-auto flex -translate-x-full animate-scrollone space-x-10 items-center mb-5">
+       <div className="h-auto w-[800px] flex -translate-x-full animate-scrollone space-x-10 items-center mb-5">
        <h2 className="text-5xl font-bold text-primary" onMouseEnter={() =>setValue({type:actions.HOVER_START})}
         onMouseLeave={() =>setValue({type:actions.HOVER_END})}>Mobile Tech</h2>
 <SkillsCard imageSrc={flutter.src}/>
@@ -47,7 +47,7 @@ function Skills() {
 
 
 </div>
-<div className="h-auto w-auto flex translate-x-full animate-scroll space-x-10 items-center mb-5">
+<div className="h-auto w-[1100px] flex translate-x-full animate-scroll space-x-10 items-center mb-5">
 <SkillsCard imageSrc={node.src}/>
 <SkillsCard imageSrc={aws.src}/>
 <SkillsCard imageSrc={firebase.src}/>
@@ -55,7 +55,7 @@ function Skills() {
 <h2 className="text-5xl font-bold text-primary" onMouseEnter={() =>setValue({type:actions.HOVER_START})}
         onMouseLeave={() =>setValue({type:actions.HOVER_END})}>Server Technology</h2>
 </div>
-<div className="h-auto w-auto flex -translate-x-full animate-scrollone space-x-10 items-center ">
+<div className="h-auto w-[900px] flex -translate-x-full animate-scrollone space-x-10 items-center ">
        <h2 className="text-5xl font-bold text-primary" onMouseEnter={() =>setValue({type:actions.HOVER_START})}
         onMouseLeave={() =>setValue({type:actions.HOVER_END})}>Databases</h2>
 <SkillsCard imageSrc={postsql.src}/>

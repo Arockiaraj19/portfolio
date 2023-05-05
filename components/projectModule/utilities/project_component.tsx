@@ -8,13 +8,17 @@ import Modal from 'react-modal'
 import projectOne from '../../../assets/projects/blackroad.png'
 import { actions,ContextData } from '../../../pages';
 import React from 'react';
+import { maduraResume } from '../../../constants/web_links';
+import { useRouter } from 'next/router';
+
 
 const ProjectCard=()=>{
+ 
   const {setValue,value} = React.useContext(ContextData);
   return <div className='flex sm:flex-col w-full sm:h-96 sm:px-10 sm:gap-0 h-72 my-20  px-20 gap-10'
   
   >
-<section  className='h-full flex-1 bg-black relative'>
+<section  className='h-full flex-1 bg-black  relative'>
 <Image   src={projectOne.src} alt='blackroad'  layout='fill' 
    objectFit='contain'/>
 </section>
@@ -37,8 +41,8 @@ const ProjectCard=()=>{
     
 </ul> 
 <div  className='flex'>
-  <p className='text-sm mr-3'>See Detail Project</p>
-  <FontAwesomeIcon icon={faArrowRight} className='text-black h-5 w-5' />
+  <p className='text-sm mr-3'>Under Development</p>
+  {/* <FontAwesomeIcon icon={faArrowRight} className='text-black h-5 w-5' /> */}
 </div>
 </section>
 
