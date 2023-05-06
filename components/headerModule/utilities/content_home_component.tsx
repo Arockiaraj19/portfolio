@@ -6,6 +6,7 @@ import Paragraph from '../../utilities/paragraph'
 import Button from '../../utilities/button'
 import { useRouter } from 'next/router';
 import { drive } from '../../../constants/web_links'
+import { LinkHomeComponent } from './link_home_component'
 export default function  ContentHomeComponent() {
   const router = useRouter();
   return (
@@ -23,7 +24,7 @@ export default function  ContentHomeComponent() {
      }}/>
      </div>
      
-     
+     <LinkHomeComponent/>
     </main>
   )
 }

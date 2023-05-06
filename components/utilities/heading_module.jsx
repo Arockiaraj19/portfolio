@@ -8,7 +8,7 @@ const HeadingModule = ({mainHeading,contentHeading}) => {
     <HeadingOne content={mainHeading} style="mb-3"/>
     <div className="ml-3 h-[2px] w-16 bg-secondary"></div>
     </div>
-    <Paragraph style="mb-8" content={contentHeading}/>    
+    <Paragraph style={contentHeading.length!=0?"mb-8":""} content={contentHeading}/>    
     </section>
     
         </div>);
