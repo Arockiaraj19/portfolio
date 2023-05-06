@@ -7,7 +7,7 @@ const ServiceCard=({heading,content,icon}:{heading:string,content:string,icon:Ic
 return <motion.div
 
 className="flex p-7 mb-4 sm:mb-10 shadow items-center rounded-sm ">
-<section  className='mr-10'>
+<section  className='mr-10 sm:mr-5'>
 <FontAwesomeIcon icon={icon} className='text-black h-10 w-10 ' />
 </section>
 

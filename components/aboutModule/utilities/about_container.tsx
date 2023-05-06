@@ -4,7 +4,11 @@ import userImage from "../../../assets/my_image/mine.jpg";
 const AboutContainer=()=>{
     return (
     <div className="container flex h-96 sm:h-auto sm:justify-center sm:items-center relative px-9 sm:flex-col sm:px-10">
-       <div className="h-full w-1/3 sm:w-full sm:h-96 relative m-auto sm:mb-10 bg-fixed bg-center"> <Image src={userImage.src} className="bg-fixed"   alt="test"   
+       <div className="h-full w-1/3 sm:w-full sm:h-96 relative m-auto sm:mb-10 bg-fixed bg-center"> <Image src={userImage.src} className="bg-fixed absolute"  style={{
+        backgroundOrigin:"border-box",
+        backgroundPosition:"fixed",
+        backgroundAttachment:"fixed"
+       }}  alt="test"   
    objectFit='contain' fill={true}/> </div>
    <div className="flex-1 flex-col justify-center items-center sm:w-full">
     <p className="mb-2">Hi, my name is Punitha Arockiaraj, and Im a software developer with 3 years of experience in the field. I have a passion for creating high-quality software that solves complex problems and provides a seamless user experience.</p>
