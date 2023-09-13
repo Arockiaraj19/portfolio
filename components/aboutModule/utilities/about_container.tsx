@@ -1,5 +1,5 @@
 import Image from "next/image";
-import userImage from "../../../assets/my_image/mine.jpg";
+import userImage from "../../../assets/my_image/mine.png";
 
 const AboutContainer=()=>{
     return (
